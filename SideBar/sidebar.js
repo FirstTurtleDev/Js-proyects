@@ -2,6 +2,7 @@ const links = document.querySelectorAll("a")
 const sections = document.querySelectorAll("section")
 let currentSection = null;
 
+links[0].classList.add("active");
 window.addEventListener("scroll", () => {
     sections.forEach((section, index) => {
         const rect = section.getBoundingClientRect();
