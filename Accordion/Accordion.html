@@ -8,32 +8,34 @@
 </head>
 <body>
     <h1>Accordion</h1>
-    <div class="accordion">
+    <div id="ui-addtab" class="hidden">
+        <button id="ui-close">Close</button>
+        <h2>Name</h2>
+        <input type="text" id="tabName" placeholder="input name...">
+        <h2>Tab Content</h2>
+        <textarea name="content" id="tabContent"></textarea>
+        <button id="addTab">Done</button>
+    </div>
 
-        <div id="accordion1" class="accordion-container">
+    <div class="accordion" id="accordion">
+        
             <div id="accordion-title1"  class="accordion-title">
                 <p class="title">Accordion1</p>
-                <p class="first icon ">+</p>
+                <p class="icon ">+</p>
             </div>
-            <div id="accordion-text1"  class="accordion-text hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, animi quas vel molestias error dolorum tempora aperiam perspiciatis assumenda. Quas tempora dignissimos vel rerum eligendi minus magni eveniet laboriosam nam dolorum animi facere, modi autem provident hic recusandae cupiditate corporis explicabo velit ipsam, iste reiciendis dolor, amet perferendis! Qui, quae?</div>
-        </div>
-
-        <div id="accordion2" class="accordion-container">
-            <div id="accordion-title2"  class="accordion-title"><p class="title">Accordion2</p><p class="second icon">+</p></div>
-            <div id="accordion-text2" class="accordion-text hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, animi quas vel molestias error dolorum tempora aperiam perspiciatis assumenda. Quas tempora dignissimos vel rerum eligendi minus magni eveniet laboriosam nam dolorum animi facere, modi autem provident hic recusandae cupiditate corporis explicabo velit ipsam, iste reiciendis dolor, amet perferendis! Qui, quae?</div>
-        </div>
-
-        <div id="accordion3" class="accordion-container">
-            <div id="accordion-title3" class="accordion-title"><p class="title">Accordion3</p><p class="third icon">+</p></div>
-            <div id="accordion-text3" class="accordion-text hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, animi quas vel molestias error dolorum tempora aperiam perspiciatis assumenda. Quas tempora dignissimos vel rerum eligendi minus magni eveniet laboriosam nam dolorum animi facere, modi autem provident hic recusandae cupiditate corporis explicabo velit ipsam, iste reiciendis dolor, amet perferendis! Qui, quae?</div>
-        </div>
-
-        <div id="accordion4" class="accordion-container">
-            <div id="accordion-title4" class="accordion-title"><p class="title">Accordion4</p><p class="fourth icon">+</p></div>
-            <div id="accordion-text4" class="accordion-text hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, animi quas vel molestias error dolorum tempora aperiam perspiciatis assumenda. Quas tempora dignissimos vel rerum eligendi minus magni eveniet laboriosam nam dolorum animi facere, modi autem provident hic recusandae cupiditate corporis explicabo velit ipsam, iste reiciendis dolor, amet perferendis! Qui, quae?</div>
-        </div>
+            <div  class="accordion-text hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, animi quas vel molestias error dolorum tempora aperiam perspiciatis assumenda. Quas tempora dignissimos vel rerum eligendi minus magni eveniet laboriosam nam dolorum animi facere, modi autem provident hic recusandae cupiditate corporis explicabo velit ipsam, iste reiciendis dolor, amet perferendis! Qui, quae?</div>
+        
+            <div id="accordion-title2"  class="accordion-title"><p class="title">Accordion2</p><p class="icon">+</p></div>
+            <div class="accordion-text hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, animi quas vel molestias error dolorum tempora aperiam perspiciatis assumenda. Quas tempora dignissimos vel rerum eligendi minus magni eveniet laboriosam nam dolorum animi facere, modi autem provident hic recusandae cupiditate corporis explicabo velit ipsam, iste reiciendis dolor, amet perferendis! Qui, quae?</div>
+       
+            <div id="accordion-title3" class="accordion-title"><p class="title">Accordion3</p><p class="icon">+</p></div>
+            <div class="accordion-text hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, animi quas vel molestias error dolorum tempora aperiam perspiciatis assumenda. Quas tempora dignissimos vel rerum eligendi minus magni eveniet laboriosam nam dolorum animi facere, modi autem provident hic recusandae cupiditate corporis explicabo velit ipsam, iste reiciendis dolor, amet perferendis! Qui, quae?</div>
+       
+            <div id="accordion-title4" class="accordion-title"><p class="title">Accordion4</p><p class="icon">+</p></div>
+            <div class="accordion-text hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, animi quas vel molestias error dolorum tempora aperiam perspiciatis assumenda. Quas tempora dignissimos vel rerum eligendi minus magni eveniet laboriosam nam dolorum animi facere, modi autem provident hic recusandae cupiditate corporis explicabo velit ipsam, iste reiciendis dolor, amet perferendis! Qui, quae?</div>
 
     </div>
+    <button id="add-button" class="add-button">Add tab</button>
     <script src="Accordion.js"></script>
 </body>
 </html>

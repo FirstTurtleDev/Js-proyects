@@ -29,14 +29,18 @@ body{
     justify-content: flex-end;
     padding: 15px 10px;
     font-size: 25px;
+    margin-top: 10px;
+    flex-wrap: wrap;
 }
 .accordion-text{
     font-size: 20px;
     background-color: antiquewhite;
-    max-height: 0;
+    height: 0;
     overflow: hidden;
-    transition: all 0.25s ease-in-out;
     padding: 0px 10px 0px 10px;
+    transform: scaleY(0);
+    transition: transform 0.05s linear;
+    word-wrap: break-word;
 }
 .accordion-title, .accordion-text{
     width: 800px;
@@ -48,9 +52,9 @@ body{
     margin-right: 10px;
 }
 .accordion-text.open{
-    max-height: 600px;
+    height: auto;
     padding: 10px;
-
+    transform: scale(1);
 }
 h1{
     margin-bottom: 20px;
@@ -59,4 +63,46 @@ h1{
     .accordion-title, .accordion-text{
         width: 100%;
     }
+}
+#ui-addtab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    background-color: white;
+    box-shadow: 1px 1px 5px black;
+    z-index: 1;
+    padding: 15px;
+    border-radius: 1px;
+    width: 800px;
+    height: 50vh;
+}
+#ui-addtab.hidden{
+    display: none;
+}
+button{
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+#tabName{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    font-size: 20px;
+}
+#tabContent{
+    min-width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    height: 100%;
+    max-width: 100%;
+    font-size: 20px;
 }
